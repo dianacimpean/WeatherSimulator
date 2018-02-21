@@ -7,7 +7,13 @@ public class Coordinates {
     private int latitude;
     private int height;
 
-    public Coordinates(int longitude, int latitude, int height ){}
+    public Coordinates(int longitude, int latitude, int height){
+
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.height = height;
+
+    }
 
     public int getLongitude() {
         return longitude;
@@ -32,4 +38,9 @@ public class Coordinates {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public static Coordinates makeCoordinate(int longitude, int latitude, int height){
+        return new Coordinates(longitude, latitude, height);
+    }
+
 }

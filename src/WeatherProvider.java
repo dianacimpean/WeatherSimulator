@@ -1,21 +1,28 @@
 //Reflexive associations - an instance of the class is related to another instance of the class.
 
 public class WeatherProvider {
-    private WeatherProvider weatherProvider(){
-        return null;
+
+    private static WeatherProvider firstInstance = null;
+
+    private static WeatherProvider weatherProvider(){
+        return weatherProvider();
     }
 
-    private String weather(){
-        return null;
+    private static String weather(){
+        return weather();
     }
 
-    private WeatherProvider(){}
+    private WeatherProvider(){
+    }
 
-    public WeatherProvider getProvider(){
-        return null;
+    public static WeatherProvider getProvider(){
+        if(firstInstance == null){
+            firstInstance = new WeatherProvider();
+        }
+        return firstInstance;
     }
 
     public String getCurrentWeather(Coordinates coordinates){
-        return null;
+        return getCurrentWeather(coordinates);
     }
 }

@@ -6,6 +6,7 @@ public class JetPlane extends Aircraft implements Flyable{
     }
 
     public JetPlane(String name, Coordinates coordinates) {
+
         super(name, coordinates);
     }
 
@@ -13,5 +14,6 @@ public class JetPlane extends Aircraft implements Flyable{
     }
 
     public void registerTower(WeatherTower WeatherTower) {
+        System.out.println("Jet Plane registered to weather tower.");
     }
 }
