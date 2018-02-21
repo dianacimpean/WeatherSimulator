@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714b108d-3532-4492-a870-7cc55461a3ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WeatherSimulator.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Aircraft.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/AircraftFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Baloon.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Coordinates.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Flyable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Helicopter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/JetPlane.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Tower.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/WeatherProvider.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/WeatherTower.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Aircraft.java" afterPath="$PROJECT_DIR$/src/Aircraft.java" />
-      <change beforePath="$PROJECT_DIR$/src/AircraftFactory.java" afterPath="$PROJECT_DIR$/src/AircraftFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/Application.java" afterPath="$PROJECT_DIR$/src/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/Baloon.java" afterPath="$PROJECT_DIR$/src/Baloon.java" />
-      <change beforePath="$PROJECT_DIR$/src/Coordinates.java" afterPath="$PROJECT_DIR$/src/Coordinates.java" />
-      <change beforePath="$PROJECT_DIR$/src/Flyable.java" afterPath="$PROJECT_DIR$/src/Flyable.java" />
-      <change beforePath="$PROJECT_DIR$/src/Helicopter.java" afterPath="$PROJECT_DIR$/src/Helicopter.java" />
-      <change beforePath="$PROJECT_DIR$/src/JetPlane.java" afterPath="$PROJECT_DIR$/src/JetPlane.java" />
-      <change beforePath="$PROJECT_DIR$/src/Tower.java" afterPath="$PROJECT_DIR$/src/Tower.java" />
-      <change beforePath="$PROJECT_DIR$/src/WeatherProvider.java" afterPath="$PROJECT_DIR$/src/WeatherProvider.java" />
-      <change beforePath="$PROJECT_DIR$/src/WeatherTower.java" afterPath="$PROJECT_DIR$/src/WeatherTower.java" />
-      <change beforePath="$PROJECT_DIR$/src/WeatherType.java" afterPath="$PROJECT_DIR$/src/WeatherType.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/src/Flyable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,6 +141,8 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -178,7 +154,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Flyable.java" />
         <option value="$PROJECT_DIR$/src/JetPlane.java" />
         <option value="$PROJECT_DIR$/src/Helicopter.java" />
         <option value="$PROJECT_DIR$/src/Coordinates.java" />
@@ -190,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/AircraftFactory.java" />
         <option value="$PROJECT_DIR$/src/WeatherProvider.java" />
         <option value="$PROJECT_DIR$/src/Aircraft.java" />
+        <option value="$PROJECT_DIR$/src/Flyable.java" />
       </list>
     </option>
   </component>
@@ -371,6 +347,14 @@
       <option name="presentableId" value="Default" />
       <updated>1519028330757</updated>
     </task>
+    <task id="LOCAL-00001" summary="First push">
+      <created>1519244130612</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519244130612</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -406,6 +390,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First push" />
+    <option name="LAST_COMMIT_MESSAGE" value="First push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -610,6 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -716,6 +705,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -832,6 +822,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +996,7 @@
     <entry file="file://$PROJECT_DIR$/src/Flyable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
