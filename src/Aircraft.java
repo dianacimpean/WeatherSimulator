@@ -35,9 +35,9 @@ public class Aircraft {
 
         this.name = name;
         this.coordinates = coordinates;
+        this.id = idCounter;
 
         System.out.println("This is a new aircraft!");
-
     }
 
     private long nextId(){

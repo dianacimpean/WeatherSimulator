@@ -2,11 +2,13 @@
 
 public class WeatherProvider {
 
-    private static WeatherProvider firstInstance = null;
+    private static WeatherProvider weatherProvider = null;
 
     private static WeatherProvider weatherProvider(){
         return weatherProvider();
     }
+
+    private static String[] weather = {WeatherType.RAIN, WeatherType.FOG, WeatherType.SUN, WeatherType.SNOW};
 
     private static String weather(){
         return weather();
@@ -16,13 +18,16 @@ public class WeatherProvider {
     }
 
     public static WeatherProvider getProvider(){
-        if(firstInstance == null){
-            firstInstance = new WeatherProvider();
+        if(weatherProvider == null){
+            weatherProvider = new WeatherProvider();
         }
-        return firstInstance;
+        return weatherProvider;
     }
 
     public String getCurrentWeather(Coordinates coordinates){
-        return getCurrentWeather(coordinates);
+
+        int currentWeather = (coordinates.getLongitude()*2 + coordinates.getLatitude()*2)/5 + coordinates.getHeight();
+
+        return weather[currentWeather];
     }
 }
