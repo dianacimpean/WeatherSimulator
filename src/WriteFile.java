@@ -8,7 +8,7 @@ import java.io.IOException;
         public static void main(String[] args) {
             try {
                 String content = "We are going to create this app with all its flyable aircrafts.";
-                File file = new File("C:/Users/DMA-Tech/Desktop/inputFile.txt");
+                File file = new File("C:/Users/DMA-Tech/Desktop/outputFile.txt");
 
                 // if file doesnt exists, then create it
                 if (!file.exists()) {

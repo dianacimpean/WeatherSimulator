@@ -1,7 +1,7 @@
 
-public abstract class AircraftFactory {
+public abstract class Factory extends AicraftFactory {
 
-    public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
+    public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
 
         Coordinates coordinates = Coordinates.makeCoordinate(longitude, latitude, height);
 
