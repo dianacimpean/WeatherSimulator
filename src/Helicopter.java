@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
@@ -5,6 +6,7 @@ import java.io.PrintWriter;
 public class Helicopter extends Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
+    String message;
 
     public Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
@@ -13,6 +15,64 @@ public class Helicopter extends Aircraft implements Flyable {
     }
 
     public void updateConditions() {
+
+//        SUN - Longitude increases with 10, Height increases with 2
+//        RAIN - Longitude increases with 5
+//        FOG - Longitude increases with 1
+//        SNOW - Height decreases with 12
+
+        weatherTower = new WeatherTower();
+        String newWeather = weatherTower.getWeather(coordinates); // this is the currentWeather algorythm
+
+        switch (newWeather) {
+
+            case WeatherType.SUN:
+                coordinates.setLatitude(coordinates.getLatitude() + 10);
+                coordinates.setHeight(coordinates.getHeight() + 2);
+                message = "Helicopter# " + this.getName() + "(" + this.getId() + "): " + "This is hot.";
+                System.out.println("message");
+                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("outputFile.txt"), true))){
+                    pw.println(message);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+
+            case WeatherType.RAIN:
+                coordinates.setLatitude(coordinates.getLatitude() + 5);
+                message = "Helicopter#" + this.getName() + "(" + this.getId() + "): " + "It's raining. Better watch out for lightings.";
+                System.out.println("message");
+                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("outputFile.txt"), true))){
+                    pw.println(message);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+
+
+            case WeatherType.FOG:
+                coordinates.setLatitude(coordinates.getLatitude() + 1);
+                message = "Helicopter#" + this.getName() + "(" + this.getId() + "): " + "We can't fly on this fog!";
+                System.out.println("message");
+                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("outputFile.txt"), true))){
+                    pw.println(message);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+
+            case WeatherType.SNOW:
+                coordinates.setHeight(coordinates.getHeight() - 12);
+                message = "Helicopter#" + this.getName() + "(" + this.getId() + "): " + "My rotor is going to freeze!";
+                System.out.println("message");
+                try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("outputFile.txt"), true))){
+                    pw.println(message);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+
+        }
     }
 
     public void registerTower(WeatherTower weatherTower) {

@@ -5,12 +5,14 @@ public class WeatherProvider {
     private static WeatherProvider weatherProvider = null;
 
     private static WeatherProvider weatherProvider(){
+
         return weatherProvider();
     }
 
     private static String[] weather = {WeatherType.RAIN, WeatherType.FOG, WeatherType.SUN, WeatherType.SNOW};
 
     private static String weather(){
+
         return weather();
     }
 
@@ -25,9 +27,7 @@ public class WeatherProvider {
     }
 
     public String getCurrentWeather(Coordinates coordinates){
-
-        int currentWeather = (coordinates.getLongitude()*2 + coordinates.getLatitude()*2)/5 + coordinates.getHeight();
-
+        int currentWeather = (coordinates.getLongitude()*3 + coordinates.getLatitude()*2 + coordinates.getHeight())%6;
         return weather[currentWeather];
     }
 }

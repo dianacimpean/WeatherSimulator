@@ -1,4 +1,3 @@
-import com.sun.xml.internal.bind.v2.model.core.ID;
 
 public class Aircraft {
     protected long id;
@@ -37,7 +36,7 @@ public class Aircraft {
         this.coordinates = coordinates;
         this.id = idCounter;
 
-        System.out.println("This is a new aircraft!");
+        System.out.println("This is a brand new aircraft!");
     }
 
     private long nextId(){

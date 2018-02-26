@@ -11,30 +11,34 @@ public class ReadFile {
         WeatherTower weatherTower = new WeatherTower();
         ArrayList<Flyable> flyables = new ArrayList<Flyable>();
         Factory factory = new Factory() {};
+        WriteFile writeFile = new WriteFile();
 
         try{
             br = new BufferedReader(new FileReader("C:/Users/DMA-Tech/Desktop/inputFile.txt"));
             System.out.println("Reading the file using readLine() method:");
-//            String contentLine = br.readLine();
+
+            int runNumber = Integer.parseInt(br.readLine());
+            System.out.println("Firstline is : " + runNumber);
+
             String contentLine = null;
             while ((contentLine = br.readLine()) != null) {
                 if (!contentLine.isEmpty()) {
                     String[] splited = contentLine.split(" ");
-//                    for (String part : splited) {
                         lines.add(splited);
                         System.out.println(splited);
-//                    }
                 }
-//                System.out.println(contentLine);
-//                contentLine = br.readLine();
             }
 
-            for (int i = 1; i<lines.size(); i++) {
+            for (int i = 1; i < lines.size(); i++) {
                 flyables.add(factory.newAircraft(lines.get(i)[0], lines.get(i)[1], Integer.parseInt(lines.get(i)[2]), Integer.parseInt(lines.get(i)[3]), Integer.parseInt(lines.get(i)[4])));
             }
 
-            for (int i = 0; i<flyables.size(); i++) {
-                flyables.get(i).registerTower(weatherTower);
+            for (int x = 0; x < flyables.size(); x++) {
+                flyables.get(x).registerTower(weatherTower);
+            }
+
+            for (int y = 1; y <= runNumber; y++){
+                weatherTower.changeWeather();
             }
         }
 
